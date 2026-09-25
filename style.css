@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    background-color: #f4f0f7;
+    color: #302a36;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 650px;
+    margin: auto;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #ded5e5;
+    border-radius: 12px;
+}
+
+h1 {
+    margin: 0;
+    color: #624579;
+}
+
+h2 {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.intro, .hint, #counter, #empty-message {
+    color: #655c6b;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #a99cb4;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    padding: 9px 13px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #705188;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #573d6c;
+}
+
+button:focus-visible, input:focus-visible {
+    outline: 3px solid #b79bcd;
+    outline-offset: 3px;
+}
+
+#message {
+    min-height: 24px;
+    margin-bottom: 0;
+}
+
+.error, #storage-message {
+    color: #a22d38;
+}
+
+#storage-message:empty {
+    display: none;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e6dfea;
+}
+
+.task-text {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.done .task-text {
+    text-decoration: line-through;
+    color: #726b77;
+}
+
+.done {
+    background-color: #f5f2f7;
+}
+
+.delete {
+    background-color: #f9e8eb;
+    color: #942c40;
+}
+
+.delete:hover {
+    background-color: #f1d1d8;
+}
+
+@media (max-width: 480px) {
+    body { padding: 20px 12px; }
+    main { padding: 18px; }
+    .input-row { flex-direction: column; }
+    .task { flex-wrap: wrap; }
+    .task-text { flex-basis: 100%; }
+}
