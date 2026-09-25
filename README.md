@@ -1,4 +1,4 @@
-# My To-Do List
+# Caveman To-Do List
 
 Assignment 03: an interactive to-do list using HTML, CSS and vanilla JavaScript.
 
